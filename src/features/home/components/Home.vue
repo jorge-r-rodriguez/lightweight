@@ -3,6 +3,7 @@ import Layout from "../../../components/Layout.vue";
 import Hero from "./Hero.vue";
 import About from "./About.vue";
 //import AboutSections from "../features/about/Sections.vue";
+import Services from "./Services.vue";
 import Experience from "./Experience.vue";
 import Projects from "./Projects.vue";
 import Contact from "./Contact.vue";
@@ -158,6 +159,7 @@ watch(
         <div class="intro-wrapper-spacer"></div>
         <div class="about-spacer" ref="aboutSpacerRef" id="about"></div>
       </div>
+      <Services id="services" />
       <Experience id="experience" />
       <Projects id="projects" @loaded="handleProjectsLoaded" />
       <div ref="contactRef" class="home-contact">
