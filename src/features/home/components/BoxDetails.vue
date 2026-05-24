@@ -104,7 +104,7 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
       <div class="box-details-content">
         <div class="box-details-title">
           <AppearingText
-            text="David"
+            text="Jorge"
             :steps="1"
             :duration="0.35"
             @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0)"
@@ -139,13 +139,13 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
     position: absolute;
     padding-bottom: 3px;
     padding-right: var(--line-length);
-    width: 240px;
-    max-width: calc(var(--svw) * 30);
+    width: 300px;
+    max-width: calc(var(--svw) * 34);
     transform: translate(-100%, -50%);
   }
 
   @include mixins.landscape-large {
-    width: 240px;
+    width: 310px;
   }
 
   &::after,
@@ -203,11 +203,11 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 
   &-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-xs);
     flex-direction: row;
-    white-space: nowrap;
-    height: var(--icon-size-sm);
+    min-width: 0;
+    height: auto;
   }
 
   &-icon {
@@ -233,13 +233,18 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
     display: flex;
     font-size: var(--font-size-sm);
     flex-direction: column;
+    min-width: 0;
 
     @include mixins.mq("md") {
-      font-size: var(--font-size-md);
+      font-size: var(--font-size-sm);
     }
 
-    &-copy {
-      flex: 0.5;
+    :deep(.box-details-content-copy) {
+      min-width: 0;
+      max-width: 100%;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+      word-break: normal;
     }
   }
 }

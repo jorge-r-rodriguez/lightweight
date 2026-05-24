@@ -12,7 +12,22 @@ export type TagVariant =
   | "kubernetes"
   | "postgresql"
   | "ogl"
-  | "glsl";
+  | "glsl"
+  | "angular"
+  | "ionic"
+  | "uxui"
+  | "a11y"
+  | "seo"
+  | "analytics"
+  | "drupal"
+  | "ecommerce"
+  | "automation"
+  | "ai"
+  | "wordpress"
+  | "woocommerce"
+  | "branding"
+  | "responsive"
+  | "animation";
 
 export const tagLabels = {
   three: "Three.js",
@@ -29,4 +44,19 @@ export const tagLabels = {
   postgresql: "PostgreSQL",
   ogl: "OGL.js",
   glsl: "GLSL",
+  angular: "Angular",
+  ionic: "Ionic",
+  uxui: "UX/UI",
+  a11y: "A11y",
+  seo: "SEO",
+  analytics: "Analytics",
+  drupal: "Drupal",
+  ecommerce: "eCommerce",
+  automation: "Automatizacion",
+  ai: "IA",
+  wordpress: "WordPress",
+  woocommerce: "WooCommerce",
+  branding: "Branding",
+  responsive: "Responsive",
+  animation: "Animacion",
 } as const satisfies Record<TagVariant, string>;
