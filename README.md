@@ -1,43 +1,108 @@
-# Portfolio (2025)
+# Jorge Rodriguez Portfolio
 
-Personal portfolio site: project case studies, lightweight 3D and shader demos, bilingual copy (English and German).
+Portfolio profesional de Jorge Rafael Rodriguez, enfocado en desarrollo frontend Angular, UX/UI, automatizacion, proyectos corporativos y trayectoria laboral.
 
-Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Lenis**, 3D via **three.js**, audio via **Howler**. GLSL is compiled through **vite-plugin-glsl**.
+Sitio construido con Vue 3, TypeScript, Vite y Three.js. Incluye experiencia 3D, listado de proyectos reales, seccion de servicios, trayectoria laboral y formulario de contacto con endpoint PHP.
+
+## Stack
+
+- Vue 3 con `<script setup>`
+- TypeScript
+- Vite
+- SCSS
+- GSAP y Lenis para animaciones y scroll
+- Three.js y GLSL para la escena 3D
+- Howler para audio
+- PHP para el envio del formulario de contacto
 
 ## Scripts
 
-| Command        | Description                          |
-| -------------- | ------------------------------------ |
-| `npm run dev`   | Dev server on port **3000** (`strictPort`) |
-| `npm run build` | `vue-tsc` then production bundle to `dist/` |
-| `npm run preview` | Serve the production build locally |
-| `npm run typecheck` | Typecheck only (`vue-tsc -b`) |
+| Comando | Descripcion |
+| --- | --- |
+| `npm run dev` | Levanta el servidor local de desarrollo |
+| `npm run build` | Ejecuta typecheck y genera la build en `dist/` |
+| `npm run preview` | Sirve la build de produccion localmente |
+| `npm run typecheck` | Ejecuta solo validacion TypeScript |
 
-## Content
+## Estructura Principal
 
-- **Projects**: `src/content/projects/{en,de}/<slug>.ts` — copy, tags, media, links. Slugs must align with `projectIds` in `src/content/projects/index.ts`.
-- **Previews / listing**: `src/content/projects/previews/`.
-- **Tags**: variants and labels live in `src/components/tagVariants.ts` (used by `Tag.vue` and content types).
+- `src/features/home/components/` contiene las secciones principales: hero, perfil, servicios, trayectoria, proyectos y contacto.
+- `src/content/projects/` contiene los datos de cada proyecto.
+- `src/content/projects/previews/` contiene las tarjetas del listado de proyectos.
+- `public/projects/` contiene las imagenes usadas por los proyectos.
+- `public/enviar-contacto.php` contiene el endpoint de envio del formulario.
+- `src/components/tagVariants.ts` define las etiquetas tecnicas disponibles para proyectos.
 
-## Stack (high level)
+## Proyectos Incluidos
 
-- Vue 3 (`<script setup>`), SCSS with shared mixins (`src/assets/styles/`)
-- i18n helpers under `src/i18n/`
-- WebGL / GLSL under `src/three/` where applicable
+- Tienda Coca-Cola
+- Todo Noticias (TN)
+- El Trece TV
+- Seguridad GBA
+- Poncho Frontend
+- Cienradios
+- The Rock Store
+- Pan con Pan
+- Mercado Fitness
+- Polotop
+- IADPI
+- Egraphics
 
-## Credits & Attribution
+## Formulario de Contacto
 
-This project was created and designed by David Heckhoff.
+El formulario envia datos a `public/enviar-contacto.php` usando `fetch`.
 
-If you use this project or substantial parts of its source code as a base for your own portfolio or work, attribution must be preserved.
+El endpoint PHP incluye:
 
-Please keep:
+- Validacion de metodo `POST`
+- Validacion de origen
+- Honeypot antispam
+- Rate limiting por IP
+- Validacion de nombre, email y mensaje
+- Filtro basico de spam
+- Proteccion contra header injection
+- Envio de email HTML a `info@jorgerodriguez.es`
 
-- existing credit comments in the source code
-- this attribution section in the README
-- a visible reference to the original project/repository in derivative works
+Para que el envio funcione en produccion, el hosting debe soportar PHP y tener habilitada la funcion `mail()`.
 
-Original portfolio:
--> https://david-hckh.com
+## Desarrollo Local
 
-Commercial reuse or redistribution of substantial portions of this project without permission is prohibited.
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Levantar entorno local:
+
+```bash
+npm run dev
+```
+
+Generar build:
+
+```bash
+npm run build
+```
+
+## Deploy
+
+La build se genera en `dist/`.
+
+Si se despliega en un hosting PHP tradicional, subir el contenido de `dist/` y verificar que `enviar-contacto.php` quede accesible en la raiz del dominio.
+
+## Repositorio
+
+Repositorio GitHub:
+
+https://github.com/jorge-r-rodriguez/lightweight
+
+## Base y Creditos
+
+Este proyecto fue adaptado a partir de una base visual/interactiva creada originalmente por David Heckhoff.
+
+Portfolio original:
+
+https://david-hckh.com
+
+El contenido, proyectos, textos, datos profesionales e imagenes de casos incluidos en esta version pertenecen a Jorge Rafael Rodriguez.
