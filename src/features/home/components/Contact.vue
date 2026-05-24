@@ -129,12 +129,12 @@ onUnmounted(() => {
 
     @include mixins.mq("md") {
       gap: var(--space-md);
-      grid-column: 1 / 6;
+      grid-column: 1 / 7;
       padding-top: var(--space-lg);
     }
 
     @include mixins.mq("lg") {
-      grid-column: 2 / 6;
+      grid-column: 2 / 7;
     }
   }
 
@@ -153,7 +153,7 @@ onUnmounted(() => {
   }
 
   &-form {
-    width: min(100%, 420px);
+    width: min(100%, 540px);
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
