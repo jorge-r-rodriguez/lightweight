@@ -12,11 +12,12 @@ const handleLinkClick = (link: string) => {
   lenis.value.scrollTo(link);
 };
 
-type ActiveLink = "about" | "projects" | "contact";
+type ActiveLink = "about" | "experience" | "projects" | "contact";
 const activeLink = ref<ActiveLink | null>(null);
-const sections: ActiveLink[] = ["about", "projects", "contact"];
+const sections: ActiveLink[] = ["about", "experience", "projects", "contact"];
 const ariaLabels = {
   about: t("about"),
+  experience: t("experience"),
   projects: t("projects"),
   contact: t("contact"),
 };
@@ -24,7 +25,7 @@ const ariaLabels = {
 const isMounted = ref(false);
 
 const barStyle = ref({ transform: "" });
-const ITEM_WIDTH = 128;
+const ITEM_WIDTH = 132;
 
 const { isDarkTheme, hasScrolledIntoView } = useHeaderTheme();
 
@@ -142,7 +143,7 @@ onMounted(() => {
     top: 3px;
     left: 3px;
     height: calc(100% - 6px);
-    width: 128px;
+    width: 132px;
     background: var(--color-orange-400);
     border-radius: 100px;
     transition:
@@ -170,7 +171,7 @@ onMounted(() => {
     background: none;
     transition: color 0.1s ease-in-out;
     font-size: var(--font-size-md);
-    width: 128px;
+    width: 132px;
     white-space: nowrap;
     text-transform: uppercase;
 
