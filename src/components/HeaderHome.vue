@@ -26,7 +26,7 @@ const ariaLabels = {
 const isMounted = ref(false);
 
 const barStyle = ref({ transform: "" });
-const ITEM_WIDTH = 116;
+const ITEM_WIDTH = 128;
 
 const { isDarkTheme, hasScrolledIntoView } = useHeaderTheme();
 
@@ -144,7 +144,7 @@ onMounted(() => {
     top: 3px;
     left: 3px;
     height: calc(100% - 6px);
-    width: 116px;
+    width: 128px;
     background: var(--color-orange-400);
     border-radius: 100px;
     transition:
@@ -172,7 +172,7 @@ onMounted(() => {
     background: none;
     transition: color 0.1s ease-in-out;
     font-size: var(--font-size-md);
-    width: 116px;
+    width: 128px;
     white-space: nowrap;
     text-transform: uppercase;
 
