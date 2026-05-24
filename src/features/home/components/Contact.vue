@@ -8,14 +8,48 @@ const contactElement = ref<HTMLElement | null>(null);
 const name = ref("");
 const email = ref("");
 const message = ref("");
+const company = ref("");
+const status = ref<"idle" | "sending" | "success" | "error">("idle");
+const statusMessage = ref("");
 
-const handleSubmit = () => {
-  const subject = encodeURIComponent(`Consulta portfolio - ${name.value || "Nuevo contacto"}`);
-  const body = encodeURIComponent(
-    [`Nombre: ${name.value}`, `Email: ${email.value}`, "", message.value].filter(Boolean).join("\n"),
-  );
+const resetForm = () => {
+  name.value = "";
+  email.value = "";
+  message.value = "";
+  company.value = "";
+};
 
-  window.location.href = `mailto:info@jorgerodriguez.es?subject=${subject}&body=${body}`;
+const handleSubmit = async () => {
+  status.value = "sending";
+  statusMessage.value = "";
+
+  const formData = new FormData();
+  formData.append("name", name.value);
+  formData.append("email", email.value);
+  formData.append("message", message.value);
+  formData.append("company", company.value);
+
+  try {
+    const response = await fetch("/enviar-contacto.php", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json().catch(() => null);
+
+    if (!response.ok || !result?.success) {
+      status.value = "error";
+      statusMessage.value = result?.message || "Ocurrio un error al enviar el formulario.";
+      return;
+    }
+
+    status.value = "success";
+    statusMessage.value = result.message;
+    resetForm();
+  } catch {
+    status.value = "error";
+    statusMessage.value = "Error de conexion. Intenta de nuevo mas tarde.";
+  }
 };
 
 onMounted(() => {
@@ -34,6 +68,10 @@ onUnmounted(() => {
     <div class="contact-content">
       <h2 class="contact-title" v-html="t('lets-work-together')"></h2>
       <form class="contact-form" @submit.prevent="handleSubmit">
+        <label class="contact-field contact-field-honeypot" aria-hidden="true">
+          <span>Empresa</span>
+          <input v-model="company" type="text" name="company" autocomplete="off" tabindex="-1" />
+        </label>
         <label class="contact-field">
           <span>Nombre</span>
           <input v-model="name" type="text" name="name" autocomplete="name" placeholder="Tu nombre" required />
@@ -52,7 +90,12 @@ onUnmounted(() => {
             required
           ></textarea>
         </label>
-        <button class="contact-submit" type="submit">Enviar consulta</button>
+        <button class="contact-submit" type="submit" :disabled="status === 'sending'">
+          {{ status === "sending" ? "Enviando..." : "Enviar consulta" }}
+        </button>
+        <p v-if="statusMessage" :class="['contact-message', `contact-message-${status}`]" role="status">
+          {{ statusMessage }}
+        </p>
       </form>
       <Social class="contact-social" variant="background" />
     </div>
@@ -158,6 +201,14 @@ onUnmounted(() => {
       min-height: 116px;
       resize: vertical;
     }
+
+    &-honeypot {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
   }
 
   &-submit {
@@ -175,10 +226,37 @@ onUnmounted(() => {
       transform 0.2s ease,
       filter 0.2s ease;
 
+    &:disabled {
+      cursor: wait;
+      opacity: 0.62;
+      transform: none;
+    }
+
     &:hover,
     &:focus-visible {
       transform: translateY(-1px);
       filter: brightness(1.04);
+    }
+  }
+
+  &-message {
+    margin-top: var(--space-xxs);
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    line-height: 1.35;
+
+    &-success {
+      color: #137c38;
+      background: rgba(34, 197, 94, 0.14);
+      border: var(--stroke-sm) solid rgba(34, 197, 94, 0.28);
+    }
+
+    &-error {
+      color: #b42318;
+      background: rgba(239, 68, 68, 0.12);
+      border: var(--stroke-sm) solid rgba(239, 68, 68, 0.24);
     }
   }
 

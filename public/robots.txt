@@ -4,3 +4,4 @@ Disallow: /legal
 Disallow: /de/legal
 Disallow: /privacy
 Disallow: /de/privacy
+Disallow: /enviar-contacto.php
