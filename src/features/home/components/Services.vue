@@ -26,9 +26,11 @@ const services = [
     </div>
     <div class="services-list">
       <article v-for="service in services" :key="service.title" class="services-card">
-        <div class="services-card-mark">{{ service.icon }}</div>
-        <div class="services-card-copy">
+        <div class="services-card-heading">
+          <div class="services-card-mark">{{ service.icon }}</div>
           <h3>{{ service.title }}</h3>
+        </div>
+        <div class="services-card-copy">
           <p>{{ service.text }}</p>
         </div>
       </article>
@@ -136,6 +138,7 @@ const services = [
     &-mark {
       width: 52px;
       height: 52px;
+      flex: 0 0 52px;
       display: grid;
       place-items: center;
       border-radius: 50%;
@@ -145,10 +148,11 @@ const services = [
       font-weight: 900;
     }
 
-    &-copy {
+    &-heading {
       display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: var(--space-sm);
+      min-height: 64px;
 
       h3 {
         max-width: 290px;
@@ -156,6 +160,12 @@ const services = [
         font-weight: 900;
         line-height: 1.12;
       }
+    }
+
+    &-copy {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
 
       p {
         color: color-mix(in srgb, var(--color-text-400) 72%, transparent);
