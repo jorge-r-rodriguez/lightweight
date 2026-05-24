@@ -119,10 +119,8 @@ const experience = [
 .experience {
   width: 100%;
   padding: 96px var(--space-outer);
-  background:
-    radial-gradient(circle at 78% 8%, rgba(47, 173, 255, 0.12), transparent 28%),
-    #101829;
-  color: var(--color-white-400);
+  background: var(--color-beige-400);
+  color: var(--color-text-400);
 
   @include mixins.mq("md") {
     padding-top: 144px;
@@ -148,7 +146,7 @@ const experience = [
     }
 
     span {
-      color: #2fb4ff;
+      color: var(--color-orange-400);
     }
   }
 
@@ -172,7 +170,7 @@ const experience = [
         bottom: 0;
         left: 9px;
         width: 1px;
-        background: rgba(255, 255, 255, 0.18);
+        background: color-mix(in srgb, var(--color-text-400) 18%, transparent);
       }
     }
 
@@ -197,23 +195,23 @@ const experience = [
       left: -47px;
       width: 18px;
       height: 18px;
-      border: 2px solid #2fb4ff;
+      border: 2px solid var(--color-orange-400);
       border-radius: 50%;
-      background: #101829;
-      box-shadow: inset 0 0 0 4px #101829;
+      background: var(--color-beige-400);
+      box-shadow: inset 0 0 0 4px var(--color-beige-400);
 
       &::after {
         content: "";
         position: absolute;
         inset: 4px;
         border-radius: inherit;
-        background: #2fb4ff;
+        background: var(--color-orange-400);
       }
     }
   }
 
   &-date {
-    color: #2fb4ff;
+    color: var(--color-orange-400);
     font-size: var(--font-size-sm);
     font-weight: 900;
     letter-spacing: 0.06em;
@@ -227,26 +225,26 @@ const experience = [
     max-width: 860px;
 
     h3 {
-      color: var(--color-white-400);
+      color: var(--color-text-400);
       font-size: var(--font-size-title-xs);
       line-height: 1.15;
       font-weight: 900;
     }
 
     h4 {
-      color: rgba(255, 255, 255, 0.68);
+      color: color-mix(in srgb, var(--color-text-400) 68%, transparent);
       font-size: var(--font-size-lg);
       font-weight: 500;
     }
 
     p,
     li {
-      color: rgba(255, 255, 255, 0.82);
+      color: color-mix(in srgb, var(--color-text-400) 78%, transparent);
       line-height: var(--line-height-copy);
     }
 
     strong {
-      color: var(--color-white-400);
+      color: var(--color-text-400);
     }
 
     ul {
