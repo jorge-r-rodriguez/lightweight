@@ -22,7 +22,7 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Desarrollo del CMS, arquitectura de contenidos y optimizacion SEO para un medio especializado con audiencia regional en multiples paises de habla hispana.",
+        text: "Desarrollo del CMS, arquitectura de contenidos y optimización SEO para un medio especializado con audiencia regional en múltiples países de habla hispana.",
       },
     },
     {

@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://seguridad.gba.gob.ar/#/home",
   description:
-    "PWA gubernamental para denuncias y gestion de seguridad ciudadana de la Provincia de Buenos Aires, un territorio con mas de 17 millones de habitantes.",
+    "PWA gubernamental para denuncias y gestión de seguridad ciudadana de la Provincia de Buenos Aires, un territorio con más de 17 millones de habitantes.",
   components: [
     {
       type: "media",
@@ -22,13 +22,13 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Desarrollo de arquitectura frontend con Angular Material, priorizando accesibilidad, rendimiento en redes moviles y cumplimiento de estandares publicos.",
+        text: "Desarrollo de arquitectura frontend con Angular Material, priorizando accesibilidad, rendimiento en redes móviles y cumplimiento de estándares públicos.",
       },
     },
     {
       type: "list",
       props: {
-        title: "Areas trabajadas",
+        title: "Áreas trabajadas",
         items: ["Angular Material", "PWA gubernamental", "Accesibilidad", "Rendimiento mobile"],
         size: "md",
       },

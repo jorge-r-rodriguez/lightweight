@@ -56,7 +56,7 @@ if (file_exists($rate_limit_file)) {
         $data['count'] = (int) $data['count'] + 1;
         if ($data['count'] > 10) {
             http_response_code(429);
-            echo json_encode(['success' => false, 'message' => 'Demasiadas solicitudes. Intenta mas tarde.']);
+            echo json_encode(['success' => false, 'message' => 'Demasiadas solicitudes. Intenta más tarde.']);
             exit();
         }
     }
@@ -171,6 +171,6 @@ if ($mail_sent) {
     ]);
 } else {
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Error al enviar el correo. Intenta de nuevo mas tarde.']);
+    echo json_encode(['success' => false, 'message' => 'Error al enviar el correo. Intenta de nuevo más tarde.']);
 }
 ?>

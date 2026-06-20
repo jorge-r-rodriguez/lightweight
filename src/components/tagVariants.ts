@@ -52,11 +52,11 @@ export const tagLabels = {
   analytics: "Analytics",
   drupal: "Drupal",
   ecommerce: "eCommerce",
-  automation: "Automatizacion",
+  automation: "Automatización",
   ai: "IA",
   wordpress: "WordPress",
   woocommerce: "WooCommerce",
   branding: "Branding",
   responsive: "Responsive",
-  animation: "Animacion",
+  animation: "Animación",
 } as const satisfies Record<TagVariant, string>;

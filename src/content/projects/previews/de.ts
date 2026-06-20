@@ -11,7 +11,7 @@ export default [
     title: "Todo Noticias (TN)",
     slug: "tn",
     thumbnail: "/projects/tn.jpg",
-    description: "Frontend de alto trafico, Drupal y video",
+    description: "Frontend de alto tráfico, Drupal y video",
   },
   {
     title: "El Trece TV",
@@ -29,7 +29,7 @@ export default [
     title: "Poncho Frontend",
     slug: "poncho",
     thumbnail: "/projects/poncho.jpg",
-    description: "Design system publico accesible WCAG/ARIA",
+    description: "Design system público accesible WCAG/ARIA",
   },
   {
     title: "Cienradios",
@@ -71,6 +71,6 @@ export default [
     title: "Egraphics",
     slug: "egraphics",
     thumbnail: "/projects/egraphics.jpg",
-    description: "WordPress, UX design y animacion",
+    description: "WordPress, UX design y animación",
   },
 ] as const satisfies ProjectPreview[];

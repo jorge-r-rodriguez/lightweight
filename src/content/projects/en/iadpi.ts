@@ -22,14 +22,14 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Desarrollo frontend para publico juridico y academico. Diseno formal, legible, de carga liviana y con foco en accesibilidad WCAG.",
+        text: "Desarrollo frontend para público jurídico y académico. Diseño formal, legible, de carga liviana y con foco en accesibilidad WCAG.",
       },
     },
     {
       type: "list",
       props: {
         title: "Stack y foco",
-        items: ["WordPress", "Accesibilidad", "Frontend semantico", "Performance"],
+        items: ["WordPress", "Accesibilidad", "Frontend semántico", "Performance"],
         size: "md",
       },
     },

@@ -39,7 +39,7 @@ const handleSubmit = async () => {
 
     if (!response.ok || !result?.success) {
       status.value = "error";
-      statusMessage.value = result?.message || "Ocurrio un error al enviar el formulario.";
+      statusMessage.value = result?.message || "Ocurrió un error al enviar el formulario.";
       return;
     }
 
@@ -48,7 +48,7 @@ const handleSubmit = async () => {
     resetForm();
   } catch {
     status.value = "error";
-    statusMessage.value = "Error de conexion. Intenta de nuevo mas tarde.";
+    statusMessage.value = "Error de conexión. Intenta de nuevo más tarde.";
   }
 };
 
@@ -82,13 +82,13 @@ onUnmounted(() => {
         </label>
         <label class="contact-field">
           <span>Mensaje</span>
-          <textarea
+          <textárea
             v-model="message"
             name="message"
             rows="4"
             placeholder="Cuéntame qué necesitas resolver"
             required
-          ></textarea>
+          ></textárea>
         </label>
         <button class="contact-submit" type="submit" :disabled="status === 'sending'">
           {{ status === "sending" ? "Enviando..." : "Enviar consulta" }}
@@ -176,7 +176,7 @@ onUnmounted(() => {
     font-weight: 700;
 
     input,
-    textarea {
+    textárea {
       width: 100%;
       border: var(--stroke-sm) solid color-mix(in srgb, var(--color-text-400) 14%, transparent);
       border-radius: var(--radius-md);
@@ -197,7 +197,7 @@ onUnmounted(() => {
       }
     }
 
-    textarea {
+    textárea {
       min-height: 116px;
       resize: vertical;
     }

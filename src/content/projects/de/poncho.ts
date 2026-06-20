@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://argob.github.io/poncho/",
   description:
-    "Contribucion al desarrollo de Poncho, la libreria frontend oficial de la Administracion Publica Nacional de Argentina.",
+    "Contribución al desarrollo de Poncho, la librería frontend oficial de la Administración Pública Nacional de Argentina.",
   components: [
     {
       type: "media",
@@ -22,7 +22,7 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Libreria de componentes accesibles adoptada por organismos del Estado para garantizar coherencia visual e inclusion digital en servicios publicos.",
+        text: "Librería de componentes accesibles adoptada por organismos del Estado para garantizar coherencia visual e inclusión digital en servicios públicos.",
       },
     },
     {

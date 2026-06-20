@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://tn.com.ar/",
   description:
-    "Optimizacion de performance y frontend del medio de noticias online mas consumido de Argentina, con mas de 30 millones de lectores mensuales.",
+    "Optimización de performance y frontend del medio de noticias online mas consumido de Argentina, con más de 30 millones de lectores mensuales.",
   components: [
     {
       type: "media",
@@ -22,14 +22,14 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Trabajo sobre integracion de CMS Drupal y reproductor de video para sostener disponibilidad, consumo multimedia y estabilidad en picos de trafico de alto impacto informativo.",
+        text: "Trabajo sobre integración de CMS Drupal y reproductor de video para sostener disponibilidad, consumo multimedia y estabilidad en picos de tráfico de alto impacto informativo.",
       },
     },
     {
       type: "list",
       props: {
-        title: "Areas trabajadas",
-        items: ["Frontend de alto trafico", "Integracion Drupal", "Video player", "Performance y disponibilidad"],
+        title: "Áreas trabajadas",
+        items: ["Frontend de alto tráfico", "Integración Drupal", "Video player", "Performance y disponibilidad"],
         size: "md",
       },
     },

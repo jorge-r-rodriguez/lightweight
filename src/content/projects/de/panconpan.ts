@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://www.panconpan.com.ar/",
   description:
-    "Diseno UX/UI y desarrollo frontend para plataforma de equipamiento gastronomico, con arquitectura visual orientada a conversion.",
+    "Diseño UX/UI y desarrollo frontend para plataforma de equipamiento gastronómico, con arquitectura visual orientada a conversión.",
   components: [
     {
       type: "media",
@@ -22,14 +22,14 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Navegacion por categorias complejas, fichas de producto claras y experiencia responsive optimizada para compradores profesionales del sector gastronomico.",
+        text: "Navegación por categorías complejas, fichas de producto claras y experiencia responsive optimizada para compradores profesionales del sector gastronómico.",
       },
     },
     {
       type: "list",
       props: {
-        title: "Areas trabajadas",
-        items: ["Web design", "UX/UI", "Responsive", "Arquitectura de informacion"],
+        title: "Áreas trabajadas",
+        items: ["Web design", "UX/UI", "Responsive", "Arquitectura de información"],
         size: "md",
       },
     },

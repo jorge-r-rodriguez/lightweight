@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://polotop.com/",
   description:
-    "eCommerce de indumentaria deportiva con identidad de marca solida y experiencia de compra optimizada para mobile.",
+    "eCommerce de indumentaria deportiva con identidad de marca sólida y experiencia de compra optimizada para mobile.",
   components: [
     {
       type: "media",
@@ -22,13 +22,13 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Diseno visual centrado en fotografia de producto, navegacion agil por categorias y proceso de checkout optimizado para dispositivos moviles.",
+        text: "Diseño visual centrado en fotografía de producto, navegación ágil por categorías y proceso de checkout optimizado para dispositivos móviles.",
       },
     },
     {
       type: "list",
       props: {
-        title: "Areas trabajadas",
+        title: "Áreas trabajadas",
         items: ["WooCommerce", "Branding", "Web design", "Checkout mobile"],
         size: "md",
       },

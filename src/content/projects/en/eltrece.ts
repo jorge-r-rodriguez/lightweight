@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://www.eltrecetv.com.ar/",
   description:
-    "Desarrollo frontend de la plataforma digital del canal lider de television abierta de Argentina, con foco en streaming en vivo y experiencia multiplataforma.",
+    "Desarrollo frontend de la plataforma digital del canal líder de televisión abierta de Argentina, con foco en streaming en vivo y experiencia multiplataforma.",
   components: [
     {
       type: "media",
@@ -22,7 +22,7 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Integracion de streaming en vivo, gestion de contenido multimedia y optimizacion de la experiencia para millones de usuarios en distintos dispositivos.",
+        text: "Integración de streaming en vivo, gestión de contenido multimedia y optimización de la experiencia para millones de usuarios en distintos dispositivos.",
       },
     },
     {

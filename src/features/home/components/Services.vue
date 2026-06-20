@@ -2,17 +2,17 @@
 const services = [
   {
     icon: "01",
-    title: "Consultoria y diagnostico digital",
-    text: "Analisis de web, experiencia de usuario, SEO local, Google Business, canales de captacion, reputacion online y puntos de fuga en el proceso de reserva o contacto.",
+    title: "Consultoría y diagnóstico digital",
+    text: "Análisis de web, experiencia de usuario, SEO local, Google Business, canales de captación, reputación online y puntos de fuga en el proceso de reserva o contacto.",
   },
   {
     icon: "02",
-    title: "Gestion de captacion y conversion",
-    text: "Landing pages, formularios, campanas, contenidos, medicion, email marketing y flujos para recuperar interesados en rutas, reservas, menus, alojamientos o experiencias concretas.",
+    title: "Gestión de captación y conversión",
+    text: "Landing pages, formularios, campañas, contenidos, medición, email marketing y flujos para recuperar interesados en rutas, reservas, menús, alojamientos o experiencias concretas.",
   },
   {
     icon: "03",
-    title: "Asistentes IA y automatizacion operativa",
+    title: "Asistentes IA y automatización operativa",
     text: "Asistentes 24/7 para preguntas frecuentes, reservas, disponibilidad y precios, conectados a formularios, CRM, email o WhatsApp para reducir carga manual y acelerar la respuesta.",
   },
 ];
@@ -22,7 +22,7 @@ const services = [
   <section class="services grid">
     <div class="services-heading">
       <p class="services-kicker">Servicios</p>
-      <h2>Desarrollo Web & <span>Automatizacion para empresas</span></h2>
+      <h2>Desarrollo Web & <span>Automatización para empresas</span></h2>
     </div>
     <div class="services-list">
       <article v-for="service in services" :key="service.title" class="services-card">

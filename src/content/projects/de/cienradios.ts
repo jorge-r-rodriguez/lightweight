@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://ar.cienradios.com/",
   description:
-    "La red de radios online mas grande de Argentina, con integracion de players de audio complejos y experiencia de escucha continua.",
+    "La red de radios online más grande de Argentina, con integración de players de audio complejos y experiencia de escucha continua.",
   components: [
     {
       type: "media",
@@ -22,7 +22,7 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Integracion de multiples streams simultaneos y continuidad de escucha sin interrupciones, cuidando performance y experiencia de usuario.",
+        text: "Integración de múltiples streams simultáneos y continuidad de escucha sin interrupciones, cuidando performance y experiencia de usuario.",
       },
     },
     {

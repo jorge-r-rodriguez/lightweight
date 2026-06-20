@@ -7,7 +7,7 @@ export default {
   videoBorder: false,
   live: "https://egraphics.com.ar/",
   description:
-    "Sitio corporativo con fuerte identidad visual para estudio de diseno, orientado a captar nuevos clientes.",
+    "Sitio corporativo con fuerte identidad visual para estudio de diseño, orientado a captar nuevos clientes.",
   components: [
     {
       type: "media",
@@ -22,14 +22,14 @@ export default {
       type: "text",
       props: {
         title: "Contexto",
-        text: "Desarrollo de animaciones CSS/JS, presentacion de servicios con storytelling visual y arquitectura de experiencia. Ciclo completo: UX, diseno y desarrollo.",
+        text: "Desarrollo de animaciónes CSS/JS, presentación de servicios con storytelling visual y arquitectura de experiencia. Ciclo completo: UX, diseño y desarrollo.",
       },
     },
     {
       type: "list",
       props: {
-        title: "Areas trabajadas",
-        items: ["WordPress", "UX design", "Animacion CSS/JS", "Storytelling visual"],
+        title: "Áreas trabajadas",
+        items: ["WordPress", "UX design", "Animación CSS/JS", "Storytelling visual"],
         size: "md",
       },
     },
