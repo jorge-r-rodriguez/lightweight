@@ -2,7 +2,7 @@
 const services = [
   {
     icon: "01",
-    title: "Frontend Angular empresarial",
+    title: "Senior Frontend Developer",
     text: "Arquitectura frontend moderna con Angular, TypeScript, RxJS y Signals para productos digitales escalables, mantenibles y orientados al rendimiento.",
   },
   {
@@ -22,7 +22,7 @@ const services = [
   <section class="services grid">
     <div class="services-heading">
       <p class="services-kicker">Servicios</p>
-      <h2>Senior Frontend Developer & <span>Angular, UX/UI e IA</span></h2>
+      <h2>Senior Frontend Developer & <span>Angular, UX/UI - IA aplicada al desarrollo</span></h2>
     </div>
     <div class="services-list">
       <article v-for="service in services" :key="service.title" class="services-card">
