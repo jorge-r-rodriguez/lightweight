@@ -87,8 +87,7 @@ onMounted(() => {
   stickyObserver.value.observe(introRef.value as HTMLElement);
 
   if (threeCanvasRef.value && !threeInitialized.value) {
-    three.init(threeCanvasRef.value);
-    threeInitialized.value = true;
+    threeInitialized.value = three.init(threeCanvasRef.value);
   }
 
   gsap.ticker.add(updateCursor);
@@ -112,8 +111,8 @@ const handleProjectsLoaded = () => {
 
 watchEffect((onInvalidate) => {
   if (
-    projectsLoaded &&
-    threeInitialized &&
+    projectsLoaded.value &&
+    threeInitialized.value &&
     //(projectId.value === null || isTransitioning.value) &&
     !preloaderVisible.value
   ) {

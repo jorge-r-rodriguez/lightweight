@@ -16,18 +16,28 @@ let isActive = false;
 
 const emptyVector = new Vector3();
 
-const init = (_canvas: HTMLCanvasElement | null) => {
-  if (instance) return;
+const init = (_canvas: HTMLCanvasElement | null): boolean => {
+  if (instance) return true;
+  if (!_canvas) return false;
   canvas = _canvas;
-  instance = new WebGLRenderer({
-    canvas: canvas!,
-    antialias: true,
-    alpha: false,
-  });
+
+  try {
+    instance = new WebGLRenderer({
+      canvas,
+      antialias: true,
+      alpha: false,
+    });
+  } catch (error) {
+    console.warn("WebGL renderer could not be initialized. Falling back to static content.", error);
+    canvas = null;
+    instance = null;
+    return false;
+  }
 
   gsap.ticker.add(tick);
   threeSizes.on("resize", resize);
   resize();
+  return true;
 };
 
 const getInstance = () => {
@@ -111,7 +121,9 @@ const destroy = () => {
   if (!instance) return;
   instance.dispose();
   gsap.ticker.remove(tick);
+  threeSizes.off("resize", resize);
   instance = null;
+  canvas = null;
   visible = true;
 };
 
