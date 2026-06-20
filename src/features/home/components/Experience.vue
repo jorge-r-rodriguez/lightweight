@@ -1,93 +1,121 @@
 <script setup lang="ts">
 const experience = [
   {
-    date: "Nov 2023",
-    title: "Senior Frontend Developer (Angular & Ionic)",
-    company: "Imatia Innovation",
-    summary: "Desarrollo de Social TV, una plataforma crítica para combatir la soledad en adultos mayores.",
+    date: "Nov 2023 - Presente",
+    title: "Desarrollador Frontend Senior | Angular & Ionic",
+    company: "Imatia",
+    summary:
+      "Desarrollo y evolución de SocialTV, una plataforma digital orientada a mejorar la comunicación y reducir el aislamiento social en personas mayores.",
     items: [
-      "Optimización radical de UX/UI y cumplimiento de estándares de accesibilidad para público senior.",
-      "Migración estratégica de funcionalidades BackOffice a una App Móvil Híbrida (Ionic + Angular).",
-      "Stack: Angular 19, Ionic 7, RxJS, Tailwind CSS.",
+      "Desarrollo de nuevas funcionalidades con Angular, TypeScript e Ionic, cuidando escalabilidad, mantenibilidad y rendimiento.",
+      "Mejoras de UX/UI y accesibilidad bajo estándares WCAG 2.1 AA para usuarios senior.",
+      "Uso de IA generativa, LLMs, Prompt Engineering, RAG y herramientas como ChatGPT, Gemini, Claude y GitHub Copilot para acelerar desarrollo, documentación y análisis técnico.",
     ],
   },
   {
     date: "Mar 2023 - Nov 2023",
-    title: "Engineering Manager",
+    title: "Lead UI Developer",
     company: "Adviters (Cliente: Fiserv / Mastercard)",
-    summary: "Dirigí la transformación técnica del área de pagos digitales, gestionando equipos multidisciplinarios.",
+    summary:
+      "Coordiné el desarrollo frontend de iniciativas de transformación digital para plataformas de pagos de Fiserv y Mastercard Latinoamérica.",
     items: [
-      "Definición de arquitectura frontend escalable y segura para el sector fintech.",
-      "Implementación de metodologías ágiles y CI/CD para acelerar el time-to-market.",
-      "Mentoring técnico y elevación de los estándares de calidad de código.",
-      "Stack: Angular 14-15, Material UI, TypeScript, RxJS, Scrum/Kanban.",
+      "Definición y evolución de arquitectura frontend basada en Angular, con foco en seguridad, rendimiento y escalabilidad.",
+      "Construcción de una librería de componentes reutilizables para mejorar consistencia y acelerar tiempos de desarrollo.",
+      "Mentoría técnica, code reviews y decisiones arquitectónicas orientadas a calidad, accesibilidad y performance.",
     ],
   },
   {
     date: "Nov 2021 - Feb 2023",
     title: "Frontend eCommerce Manager",
     company: "Wabi Project (The Coca-Cola Company)",
-    summary: "Orquesté la arquitectura frontend de un ecosistema de marketplace global (Wabi2B, WabiPay).",
+    summary:
+      "Desarrollé y evolucioné soluciones frontend dentro del ecosistema digital de Wabi Project, orientado a la digitalización de pequeños comercios.",
     items: [
-      "Integración y evolución del Design System corporativo para garantizar coherencia de marca.",
-      "Optimización de performance en aplicaciones de alto tráfico para mercados internacionales.",
-      "Stack: Angular 14, Angular Material, Bootstrap.",
+      "Participación en productos estratégicos como Wabi2B, Wabi2You, Wabi2C y WabiPay.",
+      "Consolidación del Design System para promover reutilización de componentes, consistencia visual y escalabilidad.",
+      "Trabajo con equipos de producto, diseño y desarrollo para impulsar adopción digital en mercados de Latinoamérica.",
     ],
   },
   {
     date: "Oct 2020 - Nov 2021",
     title: "UX/UI Designer & Frontend Developer",
     company: "Soflex",
-    summary: "Diseño de soluciones SaaS críticas para seguridad pública y logística.",
+    summary:
+      "Participé en el diseño, desarrollo y evolución de la arquitectura frontend del SISEP, plataforma estratégica para seguridad pública y emergencias.",
     items: [
-      "Modernización del Sistema Integral de Emergencias (Policía/Bomberos) usando tecnología GIS.",
-      "Desarrollo de interfaces complejas de despacho y monitoreo en tiempo real.",
-      "Stack: Angular 12, Google Maps Platform, Leaflet.",
+      "Desarrollo de aplicaciones web y móviles con Angular y Angular Material para operación en tiempo real.",
+      "Implementación de funcionalidades geoespaciales con Google Maps API, OpenLayers, Leaflet y GIS.",
+      "Modernización tecnológica de servicios públicos con foco en eficiencia operativa, UX y arquitectura frontend.",
     ],
   },
   {
     date: "Oct 2019 - Oct 2020",
-    title: "Senior Frontend Developer",
+    title: "Senior Frontend Developer Angular (Banca)",
     company: "ICBC Argentina",
-    summary: "Optimización de la banca digital para millones de usuarios.",
+    summary:
+      "Desarrollo y mantenimiento de aplicaciones web y móviles para el sector bancario utilizando Angular y Kendo UI.",
     items: [
-      "Mejora sustancial en la performance de operaciones bancarias críticas.",
-      "Desarrollo de componentes financieros avanzados con KendoUI.",
-      "Stack: Angular 8-9, TypeScript, RxJS, KendoUI.",
+      "Gestión de versiones, despliegues y resolución de incidencias en entornos de QA y producción.",
+      "Optimización de rendimiento, mantenimiento evolutivo y mejora continua en entornos financieros regulados.",
+      "Integración de soluciones de validación biométrica e identidad digital mediante reconocimiento facial.",
     ],
   },
   {
-    date: "Mar 2019 - Oct 2019",
+    date: "Ago 2018 - Oct 2019",
     title: "Senior Frontend Developer",
-    company: "Secretaría de Innovación Pública Argentina",
+    company: "Secretaría de Innovación Pública - Modernización",
     summary:
-      "Desarrollé y mantuve plataformas web y móviles gubernamentales en Drupal y WordPress, asegurando requerimientos institucionales.",
+      "Desarrollo, mantenimiento y evolución de plataformas web y móviles para organismos de la Administración Pública.",
     items: [
-      "Trabajo con librerías propias de la administración de gobierno, optimizando UX/UI y rendimiento.",
-      "Stack: Drupal, WordPress, UX/UI, Accesibilidad (WCAG, ARIA).",
+      "Implementación de soluciones basadas en Drupal adaptadas a requerimientos gubernamentales.",
+      "Trabajo con librerías y frameworks propios de la administración pública para asegurar integración y consistencia.",
+      "Optimización de UX/UI, rendimiento y gestión de contenidos para servicios públicos modernos y accesibles.",
     ],
   },
   {
     date: "Ene 2012 - Jun 2018",
-    title: "Senior Frontend Developer",
-    company: "Hipódromo Argentino de Palermo",
+    title: "Senior Frontend Developer - UX/UI Designer",
+    company: "Ondiss",
     summary:
-      "Diseñé, desarrollé e implementé Ondiss, la plataforma líder de juego online en Argentina.",
+      "Lideré el desarrollo frontend y la evolución de la experiencia digital de múltiples plataformas basadas en Umbraco CMS.",
     items: [
-      "Arquitectura frontend en un entorno de alto tráfico y seguridad crítica.",
-      "UX/UI avanzado, optimización SEO y estrategias de accesibilidad.",
-      "Stack: Umbraco CMS, HTML, CSS, SCSS, JavaScript, SEO.",
+      "Definición de estrategias web alineadas con objetivos de negocio, adquisición de usuarios y optimización de conversiones.",
+      "Mejora de arquitectura de información, experiencia de usuario, SEO técnico, On-Page y Off-Page.",
+      "Investigación de usuarios, análisis de comportamiento y seguimiento de métricas para optimizar usabilidad y rendimiento.",
     ],
   },
   {
     date: "Dic 2009 - Ene 2012",
     title: "Senior Frontend Developer",
     company: "CMD - Grupo Clarín",
-    summary: "Desarrollé e integré interfaces para sitios de tráfico masivo como TN y El Trece TV.",
+    summary: "Desarrollé e integré interfaces HTML, CSS y JavaScript para sitios de alto tráfico como TN y El Trece TV.",
     items: [
-      "Optimización de CMS (Drupal, WordPress) y mejora de flujos de trabajo.",
-      "Optimización de SEO y performance para millones de usuarios.",
-      "Stack: Drupal, WordPress, HTML, CSS, JavaScript.",
+      "Implementación y optimización de plataformas Drupal y WordPress.",
+      "Mejora de eficiencia en gestión de contenidos y flujos de trabajo.",
+      "Optimización de SEO, performance y experiencia de usuario en plataformas digitales masivas.",
+    ],
+  },
+  {
+    date: "Ago 2007 - Ene 2009",
+    title: "UX/UI Designer & Senior Frontend Developer",
+    company: "CIMEXTEL",
+    summary:
+      "Desarrollo de sistemas de facturación online e implementación de soluciones VoIP mediante Asterisk Software.",
+    items: [
+      "Configuración y optimización de servidores y sistemas de radioenlaces.",
+      "Diseño y desarrollo de interfaces para sistemas internos.",
+      "Trabajo con Liferay y soluciones técnicas orientadas a operación empresarial.",
+    ],
+  },
+  {
+    date: "Jul 2006 - Jul 2007",
+    title: "Programador C++",
+    company: "Protección Total S.A.",
+    summary: "Desarrollo e implementación de sistemas de geolocalización GPS y monitoreo de alarmas.",
+    items: [
+      "Programación de equipos satelitales para seguimiento y monitoreo.",
+      "Implementación de soluciones de geolocalización aplicadas a seguridad.",
+      "Desarrollo de herramientas internas con foco operativo.",
     ],
   },
 ];

@@ -107,19 +107,19 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 };
 
 const SERVICES_EN = [
-  { name: "Angular & Ionic" },
-  { name: "UX/UI & Accesibilidad" },
-  { name: "Automatización con IA" },
-  { name: "SEO & Performance" },
-  { name: "Integraciones & Analytics" },
+  { name: "Angular v18+ & TypeScript" },
+  { name: "UX/UI & WCAG 2.1 AA" },
+  { name: "Ionic & apps híbridas" },
+  { name: "LLMs, RAG & agentes" },
+  { name: "Core Web Vitals & testing" },
 ] as const satisfies { name: string }[];
 
 const SERVICES_DE = [
-  { name: "Angular & Ionic" },
-  { name: "UX/UI & Accesibilidad" },
-  { name: "Automatización con IA" },
-  { name: "SEO & Performance" },
-  { name: "Integraciones & Analytics" },
+  { name: "Angular v18+ & TypeScript" },
+  { name: "UX/UI & WCAG 2.1 AA" },
+  { name: "Ionic & apps híbridas" },
+  { name: "LLMs, RAG & agentes" },
+  { name: "Core Web Vitals & testing" },
 ] as const satisfies { name: string }[];
 
 const services = computed(() => {

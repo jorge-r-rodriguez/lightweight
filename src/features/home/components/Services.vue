@@ -2,18 +2,18 @@
 const services = [
   {
     icon: "01",
-    title: "Consultoría y diagnóstico digital",
-    text: "Análisis de web, experiencia de usuario, SEO local, Google Business, canales de captación, reputación online y puntos de fuga en el proceso de reserva o contacto.",
+    title: "Frontend Angular empresarial",
+    text: "Arquitectura frontend moderna con Angular, TypeScript, RxJS y Signals para productos digitales escalables, mantenibles y orientados al rendimiento.",
   },
   {
     icon: "02",
-    title: "Gestión de captación y conversión",
-    text: "Landing pages, formularios, campañas, contenidos, medición, email marketing y flujos para recuperar interesados en rutas, reservas, menús, alojamientos o experiencias concretas.",
+    title: "UX/UI, accesibilidad y performance",
+    text: "Diseño y desarrollo de experiencias centradas en el usuario, accesibilidad WCAG 2.1 AA, WAI-ARIA, Core Web Vitals y optimización de interfaces de alto tráfico.",
   },
   {
     icon: "03",
-    title: "Asistentes IA y automatización operativa",
-    text: "Asistentes 24/7 para preguntas frecuentes, reservas, disponibilidad y precios, conectados a formularios, CRM, email o WhatsApp para reducir carga manual y acelerar la respuesta.",
+    title: "IA aplicada al desarrollo",
+    text: "Integración de LLMs, APIs de IA, RAG, agentes inteligentes y automatización de procesos para acelerar el desarrollo y mejorar productos empresariales.",
   },
 ];
 </script>
@@ -22,7 +22,7 @@ const services = [
   <section class="services grid">
     <div class="services-heading">
       <p class="services-kicker">Servicios</p>
-      <h2>Desarrollo Web & <span>Automatización para empresas</span></h2>
+      <h2>Senior Frontend Developer & <span>Angular, UX/UI e IA</span></h2>
     </div>
     <div class="services-list">
       <article v-for="service in services" :key="service.title" class="services-card">
